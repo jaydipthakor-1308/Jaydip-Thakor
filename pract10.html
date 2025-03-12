@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        #special-heading{
-            color: rgb(127, 242, 242);
-            font: 50px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        #grade{
-            height: 500px;
-            background-color: bisque;
-            background-image: linear-gradient(rgb(59, 59, 175),rgb(26, 73, 29));
-        }
-        </style>
+   
 </head>
 <body>
-    <div id="grade">
-        <h1 id="special-heading">
+    <input type="text"class="inputText" placeholder="Enter text here">
+    <button onclick="reverse()">Reverse</button>
+    <p><span class="output"></span></p>
+    
     <script>
-        let a="Jaydip";
-        let b=a.split('').reverse().join('');
-        document.write(b);
+       function reverse(){
+        let input=document.querySelector('.inputText').value;
+        let reversed=input.split('').reverse().join('');
+        document.querySelector('.output').innerText=reversed;
+       }
     </script>
 </body>
 </html>
